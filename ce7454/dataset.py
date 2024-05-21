@@ -45,7 +45,8 @@ class PSGClsDataset(Dataset):
     def __init__(
         self,
         stage,
-        root='./data/coco/',
+        root='./content/drive/MyDrive/Data_PSG/OpenPSG-main/OpenPSG-main/ce7454/dataset/data/coco'
+        #root='./data/coco/',
         num_classes=56,
     ):
         super(PSGClsDataset, self).__init__()
