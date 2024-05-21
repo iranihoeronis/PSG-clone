@@ -45,12 +45,12 @@ class PSGClsDataset(Dataset):
     def __init__(
         self,
         stage,
-        root='./content/drive/MyDrive/Data_PSG/OpenPSG-main/OpenPSG-main/ce7454/dataset/data/coco'
+        root='./drive/MyDrive/Data_PSG/OpenPSG-main/OpenPSG-main/ce7454/dataset/data/coco'
         #root='./data/coco/',
         num_classes=56,
     ):
         super(PSGClsDataset, self).__init__()
-        with open('./data/psg/psg_cls_basic.json') as f:
+        with open('./drive/MyDrive/Data_PSG/OpenPSG-main/OpenPSG-main/ce7454/dataset/data/psg/psg_cls_basic.json') as f:
             dataset = json.load(f)
         self.imglist = [
             d for d in dataset['data']
